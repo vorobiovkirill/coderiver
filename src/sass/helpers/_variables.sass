@@ -1,0 +1,44 @@
+@import 'bourbon'
+@import 'neat'
+
+/**
+ * 1. Стандартный шрифт сайта PT Sans
+ */
+$base-font-size: 16px
+$base-line-height: 1.5
+$Georgia: 'Georgia', Helvetica, Arial, sans-serif
+$Tahoma: 'Tahoma', Helvetica, Arial, sans-serif
+$main-font-family: $Tahoma
+
+/**
+ * 2. Цвета Сайта
+ */
+
+/* Основные цвета */
+
+$grey-color: #6a737c /* основной */
+$orange-color: #f8b71a /* акцентный */
+
+/* Вспомогательные цвета */
+$grey: #383a3c
+
+/* Назначаем цвета */
+
+$main-color: $grey-color
+$accent-color: $orange-color
+$body-text-color: $grey
+
+$menu-link-color: #636b74
+$menu-link-color-active: $accent-color
+$base-link-color: $grey
+
+$border-color: #dfdfdf
+
+/**
+ * 3 - Тени
+ */
+$profile-header-shadow: 0 1px 4px 0 rgba(0,0,0,.41)
+$block-shadow: 0 0 1px 0 rgba(0,0,0,.22)
+
+=mt($time)
+	transition: all $time ease

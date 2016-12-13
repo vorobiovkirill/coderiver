@@ -1,0 +1,50 @@
+@import 'bourbon'
+@import 'neat'
+@import 'helpers/variables'
+
+.article-item
+	margin-top: 20px
+
+.article-cover
+	width: 140px
+	float: left
+	img
+		width: 140px
+
+.article-data
+	width: 190px
+	float: left
+	padding-left: 15px
+
+.article-date
+	font-size: rem(13)
+	color: #a1a1a1
+
+.article-category
+	span
+		font-size: rem(10)
+		background-color: $accent-color
+		color: $grey
+		padding: 5px 11px
+		text-transform: uppercase
+
+.article-title
+	font:
+		size: rem(14)
+		weight: bold
+	color: $grey
+
+.article-author
+	@extend .article-title
+	font-weight: normal
+	span
+		color: $accent-color
+
+.article-desc
+	padding-top: 15px
+	clear: both
+	font-size: rem(13)
+	color: $main-color
+	a
+		color: $accent-color
+		text-decoration: underline

@@ -1,0 +1,35 @@
+@import 'bourbon'
+@import 'neat'
+@import 'helpers/variables'
+
+.menu
+	display: block
+	text-align: center
+	box-sizing: border-box
+	li
+		position: relative
+		display: block
+		white-space: nowrap
+		font-size: 0
+		float: left
+		a
+			font-family: $Georgia
+			display: block
+			vertical-align: middle
+			text-align: left
+			text-decoration: none
+			cursor: pointer
+			padding: 12px 15px
+			color: $menu-link-color
+			font-size: rem(16)
+			border-top: 4px solid transparent
+			&:hover
+				background-color: #d9dadc
+
+	.active
+		a
+			background-color: $main-color
+			color: #fff
+			border-top: 4px solid $accent-color
+			&:hover
+				background-color: darken($main-color, 5%)
