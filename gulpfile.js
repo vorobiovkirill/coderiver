@@ -108,8 +108,8 @@ gulp.task('build', ['removebuild', 'styles', 'scripts'], function() {
 	var buildHtml = gulp.src('src/*.html') // Переносим HTML в build
 	.pipe(gulp.dest('build'))
 
-	var buildImage = gulp.src('src/img/**/*') // Переносим Image в build
-	.pipe(gulp.dest('build/img'));
+	var buildImage = gulp.src('src/images/**/*') // Переносим Image в build
+	.pipe(gulp.dest('build/images'));
 
 });
 
